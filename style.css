@@ -1,0 +1,445 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Fonts */
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  /* Navbar */
+  .navbar {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-links li {
+    margin: 0;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  /* Hero Section */
+  .hero {
+    padding: 60px 0;
+    background: #dae0ea;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+    color: #333;
+  }
+  .hero-text h1 span {
+    color: #4CAF4F;
+  }
+  .hero-text p {
+    margin: 20px 0;
+    color: #777;
+  }
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+  /* Clients Section */
+  .clients {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .clients h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .clients p {
+    color: #777;
+    margin-bottom: 40px;
+  }
+  .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+  }
+  .client-logos img {
+    height: 50px;
+  }
+  .size{
+    width: 70px;
+    height: 80px;
+  }
+  /* Manage Community Section */
+  .managecommunity {
+    padding: 80px 0;
+    background-color: #F5F7FA;
+  }
+  .top-panel {
+    margin-bottom: 50px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-36 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4D4D4D;
+    margin-bottom: 10px;
+  }
+  .text-18 {
+    font-size: 18px;
+    color: #717171;
+  }
+  .community-button-panel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .text-28 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4D4D4D;
+  }
+  .card p {
+    font-size: 16px;
+    color: #717171;
+  }
+  /* Experience Section */
+  .experience {
+    padding: 60px 0;
+    background: #fff;
+  }
+  .exp-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .exp-img {
+    flex: 1;
+    max-width: 100%;
+  }
+  .exp-text {
+    flex: 1;
+  }
+  .exp-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .exp-text p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  /* Helping Business Section */
+  .business {
+    padding: 80px 0;
+    background-color: #F5F7FA;
+  }
+  .business-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-side {
+    flex: 1;
+    min-width: 300px;
+  }
+  .left-side h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4D4D4D;
+    margin-bottom: 10px;
+  }
+  .left-side h2 span {
+    color: #4CAF4F; /* green color like original */
+  }
+  .left-side p {
+    font-size: 18px;
+    color: #717171;
+  }
+  .right-side ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .right-side ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+  .right-side ul li p {
+    margin: 0;
+  }
+.right-side li img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  /* Footer Top */
+  .footer-top {
+    background-color: #f0f4f8;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .footer-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color:#343131;
+    margin-bottom: 20px;
+  }
+  .hero a ,.nav-links li .btn,.experience .btn  ,.footer-top .container .footer-btn   {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .footer-btn img {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  /* Footer Bottom */
+  .footer-bottom {
+    background-color: #1e293b;
+    color: #94a3b8;
+    padding: 50px 20px;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+    width: 150px;
+  }
+.small-text {
+    font-size: 14px;
+    margin: 10px 0;
+}  
+  .social-icons a {
+    margin-right: 10px;
+  }
+   .social-icons img {
+    width: 24px;
+  }
+  /* Middle Panel */
+  .footer-middle {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .footer-links {
+    min-width: 150px;
+  }
+  .footer-links strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 14px;
+  }
+  .footer-newsletter {
+    min-width: 200px;
+  }
+  
+  .footer-newsletter strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white; 
+  }
+  
+  .email-form {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid white;
+  }
+  
+  .email-form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .email-form button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .email-form button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid #eee;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+.menu-icon {
+        display: block;
+    }
+.hero-content,
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .community-button-panel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .exp-container,
+    .business-container,
+    .design-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .business-container {
+        flex-direction: column;
+    }
+  
+    .right-side ul {
+        grid-template-columns: 1fr;
+    }
+    .footer-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-middle {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-links, .footer-newsletter {
+        text-align: center;
+      }
+    
+      .footer-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+  
+    .community-text h2 {
+        font-size: 28px;
+    }
+  
+    .clients h2 {
+        font-size: 28px;
+    }
+  }
+  
